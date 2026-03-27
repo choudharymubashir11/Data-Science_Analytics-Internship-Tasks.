@@ -79,3 +79,46 @@ Confusion Matrix: Used to analyze True Positives, True Negatives, False Positive
 **Feature Importance:** Using the Random Forest model's internal scoring, the top 10 factors influencing churn were identified and visualized.
 **Key Findings:** Factors such as tenure and monthly charges play a significant role in a customer's decision to stay or leave.
 **Strategic Value:** These insights allow for targeted business interventions to improve customer loyalty.
+
+
+# Task 4: Predicting Insurance Claim Amounts
+
+## 1. Project Objective
+To estimate medical insurance charges for individuals based on their health and demographic data using regression modeling.
+
+## 2. Dataset Description
+**Source:** Medical Cost Personal Dataset[cite: 58].
+**Features:** Age, Sex, BMI, Children, Smoker, and Region[cite: 56, 61].
+**Target:** `charges` (Numerical value of medical costs)[cite: 60].
+
+## 3. My Approach
+**Feature Engineering:** Mapped binary categories (Sex, Smoker) and applied One-Hot Encoding to the Region column.
+**EDA:** Created scatter plots to analyze the correlation between Age/BMI and insurance costs, specifically highlighting the smoking variable.
+**Modeling:** Implemented a Linear Regression model to predict the continuous 'charges' variable[cite: 60, 87].
+**Evaluation:** Used Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to quantify prediction errors[cite: 62, 88].
+
+## 4. Results & Insights
+**Insights:** Being a smoker is the single largest factor leading to higher insurance charges.
+**Observations:** BMI shows a strong positive relationship with charges, but primarily for individuals who smoke.
+**Error Metrics:** The MAE provides a direct understanding of the model's average prediction error in dollar terms.
+
+# Task 5: Personal Loan Acceptance Prediction
+
+## 1. Project Objective
+To predict customer acceptance of personal loan offers using demographic and campaign data from a bank's marketing efforts.
+
+## 2. Dataset Description
+- **Source:** Bank Marketing Dataset (UCI Machine Learning Repository).
+- **Features:** Age, Job, Marital Status, Education, Housing/Personal Loan status, and Campaign details.
+- **Target:** `y` (Whether the client subscribed to a term deposit).
+
+## 3. My Approach
+- **Data Exploration:** Analyzed how job types and marital status correlate with loan acceptance.
+- **Data Preprocessing:** Handled the semicolon delimiter and applied One-Hot Encoding to categorical features.
+- **Modeling:** Built a Decision Tree Classifier to provide an easily interpretable model for business stakeholders.
+- **Evaluation:** Focused on Accuracy and Classification Reports to measure the model's predictive power.
+
+## 4. Results & Insights
+- **Key Findings:** Specific job sectors show significantly higher interest in term deposits.
+- **Business Extraction:** By focusing on the "high-probability" groups identified by the Decision Tree, the bank can increase its conversion rate while lowering operational costs.
+  
