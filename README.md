@@ -48,3 +48,34 @@ Insights: Preliminary analysis suggests that variables like income and loan amou
 For data manipulation and cleaning Matplotlib & Seaborn: 
 For data visualization Scikit-learn: 
 For model training and evaluation metrics.
+
+**Task 3: Customer Churn Prediction (Bank Customers)**
+**1. Introduction and Problem Statement**
+The objective of this task is to identify customers who are likely to leave the bank (churn). By identifying these individuals early, the bank can implement retention strategies to reduce customer turnover and maintain a stable customer base.
+
+**2. Dataset Understanding and Description**
+**Source:** Churn Modelling Dataset via Kaggle.
+**Structure:** The dataset contains customer demographic and account information, including tenure, monthly charges, and total charges.
+**Target Variable**: Churn (Converted to binary: 1 for 'Yes', 0 for 'No').
+
+**3. Data Cleaning and Preparation**
+**Identification Removal:** Dropped irrelevant columns like customerID to focus on predictive features.
+**Handling Categorical Data**: Used One-Hot Encoding (via pd.get_dummies) to convert categorical features such as gender and other object-type columns into numerical format.
+**Target Encoding:** Mapped the 'Yes'/'No' churn labels to 1/0 for compatibility with machine learning models.
+
+4. Exploratory Data Analysis (EDA)
+
+**Churn Distribution: **Created a count plot to visualize the ratio of retained customers versus those who exited.
+**Tenure Analysis: **Utilized box plots to examine the relationship between a customer's tenure and their likelihood of churning.
+
+**5. Model Training and TestingAlgorithm:** A Random Forest Classifier was utilized to perform supervised classification.Data Split: The dataset was split into training and testing sets (80% training, 20% testing) to ensure unbiased evaluation.
+
+6. Evaluation MetricsThe model was evaluated using the following metrics:
+Accuracy: Measures the overall percentage of correct predictions.
+Confusion Matrix: Used to analyze True Positives, True Negatives, False Positives, and False Negatives.
+
+**7. Conclusion and Key Insights**
+
+**Feature Importance:** Using the Random Forest model's internal scoring, the top 10 factors influencing churn were identified and visualized.
+**Key Findings:** Factors such as tenure and monthly charges play a significant role in a customer's decision to stay or leave.
+**Strategic Value:** These insights allow for targeted business interventions to improve customer loyalty.
