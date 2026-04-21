@@ -1,23 +1,23 @@
 # Advanced Task 1: Term Deposit Subscription Prediction
 
-## [cite_start]Objective [cite: 119]
-[cite_start]To leverage machine learning to predict bank marketing success and provide interpretability using Explainable AI (SHAP).
+## Objective
+To leverage machine learning to predict bank marketing success and provide interpretability using Explainable AI (SHAP).
 
-## [cite_start]Approach [cite: 206]
-- [cite_start]**Preprocessing**: Parsed semicolon-delimited CSV and performed Label Encoding on categorical variables[cite: 124].
-- [cite_start]**Modeling**: Implemented **XGBoost**, an industry-standard gradient boosting algorithm.
-- [cite_start]**Evaluation**: Focused on **F1-Score** and **ROC-AUC** to account for the class imbalance in marketing data[cite: 126].
-- [cite_start]**Interpretability**: Used **SHAP** values to explain individual predictions, identifying 'duration' and 'poutcome' as key factors.
+## Approach
+- **Preprocessing**: Parsed semicolon-delimited CSV and performed Label Encoding on categorical variables.
+- **Modeling**: Implemented **XGBoost**, an industry-standard gradient boosting algorithm.
+- **Evaluation**: Focused on **F1-Score** and **ROC-AUC** to account for the class imbalance in marketing data.
+- [**Interpretability**: Used **SHAP** values to explain individual predictions, identifying 'duration' and 'poutcome' as key factors.
 
-## [cite_start]Results and Findings [cite: 207]
+## Results and Findings
 - **Predictive Power**: The model achieved an AUC of [Insert your score, e.g., 0.93], showing excellent separation between classes.
 - **Top Drivers**: SHAP analysis revealed that the duration of the last contact was the single most influential factor in a customer's decision to subscribe.
 - **XAI Value**: By explaining 5 individual predictions, we can see exactly why the model flagged specific customers as "high-probability" leads.
 
-## [cite_start]Key Skills Gained [cite: 128]
-- [cite_start]Classification (XGBoost) [cite: 129]
-- [cite_start]Model Interpretability (SHAP/XAI) [cite: 131]
-- [cite_start]Customer Behavior Analysis [cite: 132]
+## [Key Skills Gained 
+- Classification (XGBoost) 
+- Model Interpretability (SHAP/XAI)
+- Customer Behavior Analysis 
 
 
 # Advanced Task 2: Customer Segmentation
