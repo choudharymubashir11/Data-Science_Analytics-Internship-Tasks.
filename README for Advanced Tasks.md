@@ -1,34 +1,23 @@
-**Task 1 Term Deposit Subscription Prediction**
-**Objective**
-To build a machine learning model that predicts whether a customer will subscribe to a term deposit, and to enhance model transparency using Explainable AI (SHAP).
+# Advanced Task 1: Term Deposit Subscription Prediction
 
-**Approach**
-**Data Preprocessing**
-Loaded and parsed semicolon-delimited CSV data
-Applied Label Encoding to convert categorical variables into numerical format
-**Model Development**
-Implemented XGBoost, a powerful gradient boosting algorithm
-Tuned model parameters to improve predictive performance
-**Evaluation Metrics**
-Used F1-Score to balance precision and recall
-Used ROC-AUC to evaluate model performance under class imbalance
-**Model Interpretability**
-Applied SHAP (SHapley Additive exPlanations) for explainability
-Identified key influencing features such as:
-duration (last contact duration)
-poutcome (previous campaign outcome)
-**Results and Findings**
-Model Performance: Achieved an AUC score of 0.93 (update with your actual score)
-**Key Insight:**
-The duration of the last contact is the most influential factor in predicting subscription
-**Explainability Impact:**
-SHAP analysis provided clear explanations for individual predictions
-Helped identify high-probability customers and understand model decisions
-**Key Skills Gained**
-Machine Learning Classification (XGBoost)
-Model Interpretability (SHAP / Explainable AI)
-Customer Behavior Analysis
-Handling Imbalanced Datasets.
+## [cite_start]Objective [cite: 119]
+[cite_start]To leverage machine learning to predict bank marketing success and provide interpretability using Explainable AI (SHAP).
+
+## [cite_start]Approach [cite: 206]
+- [cite_start]**Preprocessing**: Parsed semicolon-delimited CSV and performed Label Encoding on categorical variables[cite: 124].
+- [cite_start]**Modeling**: Implemented **XGBoost**, an industry-standard gradient boosting algorithm.
+- [cite_start]**Evaluation**: Focused on **F1-Score** and **ROC-AUC** to account for the class imbalance in marketing data[cite: 126].
+- [cite_start]**Interpretability**: Used **SHAP** values to explain individual predictions, identifying 'duration' and 'poutcome' as key factors.
+
+## [cite_start]Results and Findings [cite: 207]
+- **Predictive Power**: The model achieved an AUC of [Insert your score, e.g., 0.93], showing excellent separation between classes.
+- **Top Drivers**: SHAP analysis revealed that the duration of the last contact was the single most influential factor in a customer's decision to subscribe.
+- **XAI Value**: By explaining 5 individual predictions, we can see exactly why the model flagged specific customers as "high-probability" leads.
+
+## [cite_start]Key Skills Gained [cite: 128]
+- [cite_start]Classification (XGBoost) [cite: 129]
+- [cite_start]Model Interpretability (SHAP/XAI) [cite: 131]
+- [cite_start]Customer Behavior Analysis [cite: 132]
 
 
 # Advanced Task 2: Customer Segmentation
