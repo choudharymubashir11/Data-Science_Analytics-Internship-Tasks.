@@ -5,11 +5,11 @@
 The objective of this task is to understand how to read, summarize, and visualize the Iris dataset. We will perform Exploratory Data Analysis (EDA) to identify patterns and relationships between sepal and petal measurements across different iris species.
 
 **2. Data Loading and Inspection **
-# Download the Iris dataset from UCIML via kagglehub [cite: 13]
+# Download the Iris dataset from UCIML via kagglehub
 dataset_path = kagglehub.dataset_download("uciml/iris")
 file_path = os.path.join(dataset_path, "Iris.csv")
 
-# Load the dataset using pandas [cite: 14]
+# Load the dataset using pandas 
 df = pd.read_csv(file_path)
 
 **3. Exploratory Data Analysis (EDA)**
