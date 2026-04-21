@@ -45,3 +45,28 @@ We identified 5 distinct customer groups:
 * **Spendthrifts**: Provide frequent discount alerts and "buy-one-get-one" offers to maintain engagement.
 * **Sensible Customers**: Focus on value-for-money marketing and essential items.
 
+
+
+# Advanced Task 3: Energy Consumption Time Series Forecasting
+
+## 1. Objective
+To forecast daily household energy usage by analyzing historical power consumption data and comparing statistical, machine learning, and temporal models.
+
+## 2. Approach
+* **Data Preprocessing**: Combined Date/Time columns, handled missing values via forward filling, and resampled the minute-by-minute data into a Daily frequency for clearer trend analysis.
+* **Feature Engineering**: Extracted temporal features such as `day_of_week`, `month`, and `is_weekend` to help models understand seasonal and weekly cyclicality.
+* **Modeling**:
+    * **ARIMA**: A statistical model used to capture linear relationships in the time series.
+    * **XGBoost**: A gradient boosting regressor utilized to model complex non-linear relationships using engineered time features.
+* **Evaluation**: Compared models using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
+
+## 3. Results and Findings
+* **Temporal Patterns**: Energy consumption peaks significantly during specific seasons and shows a clear distinction between weekdays and weekends.
+* **Model Performance**: XGBoost generally outperformed ARIMA in capturing sudden spikes in usage, while ARIMA provided a smoother baseline for general trends.
+* **Insights**: Household energy usage is highly dependent on time-of-day and seasonal factors, suggesting that targeted energy-saving alerts on peak days could reduce overall consumption.
+
+## 4. Skills Gained
+* Time series resampling and parsing
+* Statistical vs. ML forecasting comparison
+* Error evaluation (MAE, RMSE)
+* Temporal data visualization.
