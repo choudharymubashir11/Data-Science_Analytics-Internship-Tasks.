@@ -70,3 +70,28 @@ To forecast daily household energy usage by analyzing historical power consumpti
 * Statistical vs. ML forecasting comparison
 * Error evaluation (MAE, RMSE)
 * Temporal data visualization.
+
+# Advanced Task 4: Loan Default Risk with Business Cost Optimization
+
+## 1. Objective
+To predict the likelihood of loan default and determine the optimal decision threshold that minimizes the bank's total financial loss (Business Cost Optimization).
+
+## 2. Approach
+* **Data Cleaning**: Imputed missing values for employment length and interest rates using medians and removed age/employment outliers.
+* **Feature Engineering**: Applied One-Hot Encoding to categorical variables and standardized numerical features for the Logistic Regression model.
+* **Cost-Benefit Analysis**:
+    * **False Negative (FN)**: Approving a risky loan.
+    Cost = Total Loan Principal.
+    * **False Positive (FP)**: Rejecting a safe loan.
+      Cost = Lost Interest Profit.
+  **Optimization**: Iterated through probability thresholds (0.0 to 1.0) to find the specific cut-off that minimizes the sum of FN and FP costs.
+
+## 3. Results and Findings
+* **Optimal Threshold**: The model revealed that a lower threshold (e.g., 0.20 - 0.30) is often better than the default 0.50, as it catches more defaults and saves the bank significantly more money.
+* **Risk Score**: The loan grade and interest rate were among the most significant predictors of risk.
+* **Financial Impact**: By adjusting the threshold based on costs, we reduced the total simulated business loss by [Insert your cost savings]% compared to standard modeling.
+
+## 4. Skills Gained
+* Binary classification and risk scoring.
+* Cost-based evaluation metrics (moving beyond simple accuracy).
+* Decision threshold tuning for business profit.
